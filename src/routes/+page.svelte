@@ -1,14 +1,25 @@
 <script>
+  // components
   import Navbar from "../components/Navbar.svelte";
-  import Title from "../components/Title.svelte";
+  import ExpensesList from "../components/ExpensesList.svelte";
+
+  // data
+  import expensesData from '../data/expenses.js'
+  // variables
+  let expenses = [...expensesData];
+  console.log(expenses)
+
+  //functions
 </script>
 
+<!-- Template -->
 <Navbar />
-<div class="container">
-  <a href="/about">About my site</a>
-  
-  <Title title="add expense"/>
-  <Title title="expense list" />
-  <Title />
+<main class="content">
+  <div class="container">
+    <ExpensesList  {expenses} />
+  </div>
+</main>
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
 
- </div>

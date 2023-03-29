@@ -191,6 +191,9 @@ Main Title
 Single Expense
 ======
 */
+.nav-link {
+  color: white;
+}
 .single-expense {
   display: flex;
   justify-content: space-between;

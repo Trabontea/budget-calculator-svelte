@@ -14,8 +14,8 @@
 <section>
   <SectionTitle  title="expenses list"/>
   <ul>
-    {#each expenses as expense, index}
-    <Expense expense={expense} index={index + 1}/>
+    {#each expenses as expense}
+    <Expense expense={expense} />
     <!-- <Expense {...expense} /> -->
       {:else}
       <h2>Currently there are no expense</h2>
